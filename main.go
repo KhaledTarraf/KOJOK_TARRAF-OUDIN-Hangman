@@ -1,15 +1,19 @@
 package main
 
-import "main/my_hangman/src"
+import "main/KOJOK_TARRAF-OUDIN-Hangman/src"
 
-func main() {
+func play() {
 	hangman := src.NewHangManData()
 	for hangman.Attempts > 0 {
 		hangman.AskForALetter()
 	}
 
 	if hangman.Attempts == 0 {
+		hangman.PrintHangman()
 		hangman.PrintLose()
 	}
+}
 
+func main() {
+	play()
 }
