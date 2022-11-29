@@ -7,6 +7,7 @@ import (
 
 func (h *HangManData) AskForALetter() { // Ask for a letter
 	fmt.Println("******************")
+	h.PrintHangman()
 	h.PrintAttempts()
 	fmt.Println()
 	fmt.Println(h.Word)

@@ -8,9 +8,9 @@ import (
 	"time"
 )
 
-func (h *HangManData) FindWordInFile() { // Find a word in the file "hangman.txt"
+func (h *HangManData) FindWordInFile() { // Find a word in the file "dicti.txt"
 
-	data, err := os.Open("hangman.txt") // Open the file
+	data, err := os.Open("dictio.txt") // Open the file
 
 	if err != nil { // Check for errors
 		fmt.Println(err) // If there is an error, print it
